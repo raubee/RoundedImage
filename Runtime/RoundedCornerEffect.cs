@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
-namespace AdLucem.UI.Rounded
+namespace AdLucem.UI
 {
 	[ExecuteInEditMode]
 	public class RoundedCornerEffect : BaseMeshEffect
