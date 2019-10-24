@@ -1,4 +1,4 @@
-# Rounded image implementation for Unity UI
+# Rounded corner image implementation for Unity UI
 
 This package is an implementation of a UI rounded image as BaseMeshEffect.
 It uses additionnal channels of UI Canvas (TexCoord1 and TexCoord2) to pass rounded informations to the shader.
