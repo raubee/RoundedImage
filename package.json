@@ -1,7 +1,7 @@
 {
   "name": "com.adlucem.ui.roundedimage",
   "displayName": "AdLucem RoundedImage",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This package is an implementation of a UI rounded image as BaseMeshEffect.\r It uses additionnal channels of UI Canvas (TexCoord1 and TexCoord2) to pass rounded informations to the shader.",
   "main": "index.js",
   "scripts": {
