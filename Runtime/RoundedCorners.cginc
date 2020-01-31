@@ -9,5 +9,7 @@ float RoundClip(float2 uv, float w, float h, float r)
 	float2 muv = abs(nUV * 2 - 1) - wh + r * 2 ;
 	float d = length(max(0, muv)) / (r * 2);
 
-	return saturate((1-d) / fwidth(d));
+	float fw = fwidth(d);
+	if(fw <= .0) fw = 0.001;
+	return saturate((1.-d) / fw);
 }
