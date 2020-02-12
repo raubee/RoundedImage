@@ -75,7 +75,7 @@ Shader "AdLucem/UI/RoundedImage/Texture" {
             fixed4 frag (v2f i) : SV_Target {
                 float alpha = RoundClip(i.uv, i.uv1.x, i.uv1.y, i.uv2.x);
                 fixed4 col = tex2D(_MainTex, i.uv) * i.color;
-                col.a = alpha * i.color.a;
+                col.a = alpha * col.a;
                 return col;
             }
             ENDCG
