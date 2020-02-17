@@ -31,8 +31,9 @@
         ZTest [unity_GUIZTestMode]
         ColorMask [_ColorMask]
         // ---
-        ZWrite Off
+        ZWrite On
         Blend SrcAlpha OneMinusSrcAlpha
+        Offset 1, 1
 
         Pass {
             CGPROGRAM
