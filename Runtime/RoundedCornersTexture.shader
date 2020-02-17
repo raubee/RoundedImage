@@ -32,9 +32,8 @@ Shader "AdLucem/UI/RoundedImage/Texture" {
         ZTest [unity_GUIZTestMode]
         ColorMask [_ColorMask]
         // ---
-        ZWrite On
+        ZWrite Off
         Blend SrcAlpha OneMinusSrcAlpha
-        Offset 1, 1
 
         Pass {
             CGPROGRAM
