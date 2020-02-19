@@ -1,6 +1,8 @@
 ﻿Shader "AdLucem/UI/RoundedImage/Color" {
     Properties {
 
+        [PerRendererData] _MainTex ("Sprite Texture", 2D) = "white" {}
+
         // --- Mask support ---
         [HideInInspector] _StencilComp ("Stencil Comparison", Float) = 8
         [HideInInspector] _Stencil ("Stencil ID", Float) = 0
@@ -57,6 +59,8 @@
                 float3 uv2 : TEXCOORD2;
                 float4 color : COLOR;
             };
+
+            sampler2D _MainTex;
 
             v2f vert (appdata v) {
                 v2f o;

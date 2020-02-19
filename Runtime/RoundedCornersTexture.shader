@@ -1,6 +1,6 @@
 Shader "AdLucem/UI/RoundedImage/Texture" {
     Properties {
-        [HideInInspector] _MainTex ("Texture", 2D) = "white" {}
+        [PerRendererData] _MainTex ("Sprite Texture", 2D) = "white" {}
 
         // --- Mask support ---
         [HideInInspector] _StencilComp ("Stencil Comparison", Float) = 8
