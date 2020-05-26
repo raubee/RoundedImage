@@ -2,7 +2,7 @@
 // w : width
 // h : height
 // r : radius
-float RoundClip(float2 uv, float w, float h, float r)
+void RoundClip(float2 uv, float w, float h, float r)
 {
 	float2 wh = float2(w, h);
 	float2 nUV = (uv - 0.5) * wh + .5;
@@ -11,5 +11,5 @@ float RoundClip(float2 uv, float w, float h, float r)
 
 	float fw = fwidth(d);
 	if(fw <= .0) fw = 0.001;
-	return saturate((1.-d) / fw);
+	clip (saturate((1.-d) / fw) - 0.001);
 }
